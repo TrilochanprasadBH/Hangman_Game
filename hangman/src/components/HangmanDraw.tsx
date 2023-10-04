@@ -26,16 +26,26 @@ const LEFT_LEG = (
     <div style={{width:"120px", height:"10px", background:"black", position:"absolute", top:"230px", right:"0px", rotate:"-360deg", transformOrigin:"right bottom"}}/>
 )
 
+const Body_part = [HEAD, BODY, RIGHT_HAND, LEFT_HAND, RIGHT_LEG, LEFT_LEG];
 
-const HangmanDraw = () => {
-  return (
+
+interface Props{
+    noofguess:number 
+}
+
+
+const HangmanDraw = ({noofguess}:Props) => {
+  
+  
+    return (
     <DIV>
-       {HEAD}
+       {/* {HEAD}
        {BODY}
        {RIGHT_HAND}
        {LEFT_HAND}
        {RIGHT_LEG}
-       {LEFT_LEG}
+       {LEFT_LEG} */}
+       {Body_part.slice(0,noofguess)}
         <DIV_small/>
         <DIVHor/>
         <DIVVer/>
