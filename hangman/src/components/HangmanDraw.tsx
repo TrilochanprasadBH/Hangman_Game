@@ -23,7 +23,7 @@ const RIGHT_LEG = (
 )
 
 const LEFT_LEG = (
-    <div style={{width:"120px", height:"10px", background:"black", position:"absolute", top:"230px", right:"0px", rotate:"-60deg", transformOrigin:"right bottom"}}/>
+    <div style={{width:"120px", height:"10px", background:"black", position:"absolute", top:"230px", right:"0px", rotate:"-360deg", transformOrigin:"right bottom"}}/>
 )
 
 

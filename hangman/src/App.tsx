@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 import HangmanDraw from './components/HangmanDraw'
+import HangmanWord from './components/HangmanWord'
 
 interface UserData {
   id: number;
@@ -45,6 +46,7 @@ const App=()=> {
    <DIV>
       <Div2>Win Or Loose</Div2>
       <HangmanDraw/>
+      <HangmanWord/>
     </DIV>
   )
 }
